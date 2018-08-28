@@ -1,0 +1,7 @@
+.DS_Store
+SFTP.sublime-settings
+sftp-config.json
+node_modules
+vendor
+.vscode
+/dist
