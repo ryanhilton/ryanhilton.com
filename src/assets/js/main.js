@@ -11,19 +11,17 @@ import resume from "../resume.pdf";
 		let showTriggers = qsa('.show-more');
 		let triggersArray = Array.from(showTriggers);
 
-		triggersArray.forEach (
+		triggersArray.forEach(
 			initialHeight => initialHeight.addEventListener('click', removeHeightClass)
 		);
 	}
-
-	// for (var workPanel of workPanels) workPanel.classList.contains("initial-height") && (this.previousElementSibling.classList.remove("initial-height"), this.style.display = "none")
 
 	function removeHeightClass() {
 		let workPanels = qsa('.work-panels');
 		for (var workPanel of workPanels) {
 			workPanel.classList.contains('initial-height') && this.previousElementSibling.classList.remove('initial-height'),
-			// 'this' is assigned to the showMoreTrigger that was clicked, so it gets hidden
-			this.style.display = 'none';
+				// 'this' is assigned to the showMoreTrigger that was clicked, so it gets hidden
+				this.style.display = 'none';
 		}
 	}
 
