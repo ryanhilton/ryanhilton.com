@@ -11,8 +11,8 @@ import resume from "../resume.pdf";
 		let showTriggers = qsa('.show-more');
 		let triggersArray = Array.from(showTriggers);
 
-		triggersArray.forEach(
-			initialHeight => initialHeight.addEventListener('click', removeHeightClass)
+		triggersArray.map(
+			trigger => trigger.addEventListener('click', removeHeightClass)
 		);
 	}
 
